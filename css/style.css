@@ -1,15 +1,93 @@
+/* UTILITIES  */
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    border: 1px solid black;
-    text-decoration: none;
+.container {
+    width: 1170px;
+    margin: 50px auto 0;
+    padding: 20px 100px;
+    background-color: #B91450;
 }
 
-.hidden {
+
+
+/* START MAIN */
+#main-top {
+    text-align: center;
+}
+
+#main-top h2 {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#main-top .top {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    padding: 20px 100px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#main-top .top .data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+}
+
+#main-top .top .data label {
+    margin-bottom: 10px;
+    color: #B91450;
+}
+
+#main-top .top .data input,
+#main-top .top .data select {
+    padding:10px;
+    border: 1px solid #B91450;
+    border-radius:10px;
+    text-align:center;
+}  {
+    padding:10px;
+    border: 1px solid #B91450;
+    border-radius:10px;
+    text-align:center;
+} 
+
+#main-top .top .data input:focus,
+#main-top .top .data select:focus {
+    outline: none;
+}
+
+#main-top .top .buttons {
+    margin-top: 60px;
+    width: 100%;
+}
+
+#main-top .top .buttons .btn {
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px 30px;
+    border: 2px solid #B91450;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 700;
+    color: #B91450;
+    background-color: lightgrey;
+}
+
+#main-top .top .buttons .btn:hover {
+    color: #fff;
+    background-color: grey;
+}
+
+
+/* .hidden {
     opacity: 0;
     transition: 0.5s;
 }
@@ -17,4 +95,6 @@
 .show {
     opacity: 1;
     transition: 0.5s;
-}
+} */
+
+/* END MAIN */
