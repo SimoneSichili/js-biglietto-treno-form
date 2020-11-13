@@ -20,7 +20,7 @@ btnGenerate.addEventListener("click",
         // calcolo sconto per età
         if (age == "minorenne") {
             discount = ticketPrice * 0.2; 
-            discountType = "Sconto per minorenni";
+            discountType = "Sconto Bronze";
         } else if (age =="over65") {
             discount = ticketPrice * 0.4;
             discountType = "Sconto Silver";
@@ -49,7 +49,7 @@ btnGenerate.addEventListener("click",
         document.getElementById("cp-code").innerHTML = cpCode;
         
         // apparizione sezione ticket
-        document.getElementById("ticket-section").className = "show";
+        document.getElementById("ticket-section").className = "bottom show";
     }   
  
 )
@@ -71,7 +71,7 @@ btnGenerate.addEventListener("click",
         document.getElementById("cp-code").innerHTML = "";
 
         // sparizione sezione ticket
-        document.getElementById("ticket-section").className = "hidden";
+        document.getElementById("ticket-section").className = "bottom hidden";
     }
 
 )

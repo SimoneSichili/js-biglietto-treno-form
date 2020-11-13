@@ -16,17 +16,17 @@
         <section id="main-top">
             <h2>Calcola il prezzo del tuo biglietto</h2>
             <div class="top">
-                <div class="data">
+                <div class="data-top">
                     <label for="name">Nome e Cognome</label>
                     <input id="name" type="text">
                 </div>
                 
-                <div class="data">
+                <div class="data-top">
                     <label for="km">Km da percorrere</label>
                     <input id="km" type="number">
                 </div>
                 
-                <div class="data">
+                <div class="data-top">
                     <label for="age">Età</label>
                     <select name="scelta" id="age">
                         <option value="minorenne">Minorenne</option>
@@ -48,18 +48,29 @@
         <section id="main-bottom">
             <h2>Il tuo biglietto</h2>
             <div id="ticket-section" class="bottom hidden">
-                <h2>Il tuo biglietto</h2>
-                <h4>Nome del passeggero</h4>
-                <p id="passenger"></p>
-        
-                <h4>Offerta</h4>
-                <p id="discount"></p>
-                <h4>Carrozza</h4>
-                <p id="wagon"></p>
-                <h4>Codice CP</h4>
-                <p id="cp-code"></p>
-                <h4>Costo del biglietto</h4>
-                <p id="ticket-price"></p>
+                <h3>Dettaglio Passeggeri</h3>
+                <div class="bottom-container">
+                    <div class="data-bottom">
+                        <h4>Passeggero</h4>
+                        <p id="passenger"></p>
+                    </div>
+                    <div class="data-bottom">
+                        <h4>Offerta</h4>
+                        <p id="discount"></p>
+                    </div>
+                    <div class="data-bottom">
+                        <h4>Carrozza</h4>
+                        <p id="wagon"></p>
+                    </div>
+                    <div class="data-bottom">
+                        <h4>Codice CP</h4>
+                        <p id="cp-code"></p>
+                    </div>
+                    <div class="data-bottom">
+                        <h4>Costo biglietto</h4>
+                        <p id="ticket-price"></p>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- parte inferiore -->
