@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- parte superiore -->
+    <section>
+        <h2>Calcola il prezzo del tuo biglietto</h2>
+        <label for="name">Nome e Cognome</label>
+        <input id="name" type="text">
+    
+        <label for="km">Km da percorrere</label>
+        <input id="km" type="number">
+
+        <label for="age">Età</label>
+        <select name="scelta" id="age">
+            <option value="minorenne">Minorenne</option>
+            <option value="maggiorenne">Maggiorenne</option>
+            <option value="over65">Over 65</option>
+        </select>
+
+        <a href="#" id="generate" class="btn">Genera</a>
+        <a href="#" id="cancel" class="btn">Annulla</a>
+    </section>
+    <!-- /parte superiore -->
+
+    <!-- parte inferiore -->
+    <section id="ticket-section" class="hidden">
+        <h2>Il tuo biglietto</h2>
+        <h4>Nome del passeggero</h4>
+        <p id="passenger"></p>
+
+        <h4>Offerta</h4>
+        <p id="discount"></p>
+        <h4>Carrozza</h4>
+        <p id="wagon"></p>
+        <h4>Codice CP</h4>
+        <p id="cp-code"></p>
+        <h4>Costo del biglietto</h4>
+        <p id="ticket-price"></p>
+    </section>
+    <!-- parte inferiore -->
+
+    <!-- my js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
